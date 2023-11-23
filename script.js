@@ -1,5 +1,17 @@
 function stringChop(str, size) {
   // your code here
+ const chunks = [];
+  
+  // Check for invalid input
+  if (size <= 0) {
+    return [];
+  }
+
+  for (let i = 0; i < str.length; i += size) {
+    chunks.push(str.slice(i, i + size));
+  }
+
+  return chunks
 }
 
 // Do not change the code below
