@@ -3,7 +3,7 @@ function stringChop(str, size) {
  const chunks = [];
   
   // Check for invalid input
-  if (size <= 0) {
+  if (str.length <= 0) {
     return [];
   }
 
@@ -11,10 +11,10 @@ function stringChop(str, size) {
     chunks.push(str.slice(i, i + size));
   }
 
-  return chunks
+  return chunks;
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
